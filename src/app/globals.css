@@ -1,33 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/*! purgecss start ignore */
+@import "slick-carousel/slick/slick.css";
+/*! purgecss end ignore*/
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  font-family: "Rubik", sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+p {
+  color: black;
+}
+.animation-hover:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  height: 2px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  background-color: orange-500;
+  left: 50%;
+  display: block;
+  bottom: 0;
+  position: absolute;
+}
+.animation-active:after {
+  @apply left-0 w-full;
+}
+.animation-hover:hover:after {
+  @apply left-0 w-full;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+li.custom-list:before {
+  content: "\2022"; /* bullet point, for screen readers */
+  text-indent: -9999999px; /* move the bullet point out of sight */
+
+  width: 0.4em;
+  height: 1em;
+  background-repeat: no-repeat;
+
+  background-size: 0.4em 0.7em;
+  background-position: 0 0.3em;
+  font-size: 300%;
+  top: -0.35em;
+  position: absolute;
+  display: block;
+}
+li.circle-check:before {
+  background-image: url("/assets/Icon/checklist.svg");
+  left: -0.7em;
+  top: -0.4em;
+}
+li.check:before {
+  left: -0.5em;
+  background-image: url("/assets/Icon/jam_check.svg");
+  top: -0.5em;
+  font-size: 400%;
+}
+/* Slideshow */
+.slick-dots li {
+  /* Remove the @apply rule */
+  display: inline-block;
+}
+.slick-dots span {
+  background-color: #808080;
+}
+.slick-dots .slick-active span {
+  background-color: #ffa500;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  width: 12px;
 }
