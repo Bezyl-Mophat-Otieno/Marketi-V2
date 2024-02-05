@@ -3,13 +3,13 @@ import Link from "next/link";
 
 function ServicesOffered() {
   return (
-    <section className="text-gray-600 body-font w-screen">
+    <section className="text-gray-600 body-font w-screen" id="services">
       <div className="container px-5 py-24 mx-auto">
         {/* New Animated Header */}
         <div className="flex items-center justify-center">
           <div className="relative mb-12">
             <h2 className="text-3xl font-medium text-black inline-block">
-              Marketi Infrastructure
+              Maketi Infrastructure
             </h2>
           </div>
         </div>
@@ -63,7 +63,7 @@ function ServicesOffered() {
               Business Development
             </h2>
             <p className="leading-relaxed text-base">
-              Accelerate your business growth with Marketi's Business
+              Accelerate your business growth with Maketi's Business
               Development service. Leverage our extensive network and resources
             </p>
             <Link
@@ -117,11 +117,10 @@ function ServicesOffered() {
           </div>
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
             <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
-              Compliance Tools
+               Fulfillment services
             </h2>
             <p className="leading-relaxed text-base">
-              Handle taxes and other compliance needs with our advanced
-              compliance tools.
+              Providing supporting infrastructure to support your business needs. Fulfillment includes working with partners to avail services like warehousing, mobility, and financing. 
             </p>
             <Link
               href={""}
@@ -198,8 +197,7 @@ function ServicesOffered() {
               className="sm:w-16 sm:h-16 w-10 h-10"
               viewBox="0 0 24 24"
             >
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
             </svg>
           </div>
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
@@ -231,7 +229,7 @@ function ServicesOffered() {
         </div>
 
         <button className="flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-          Let's Get Started
+          <Link href={"#contact"}>Get Started</Link>
         </button>
       </div>
     </section>

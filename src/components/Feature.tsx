@@ -26,7 +26,6 @@ const Feature = () => {
             <Image
               src="/assets/service-img.jpg"
               alt="VPN Illustrasi"
-              layout="responsive"
               height={700}
               width={700}
             />
@@ -38,10 +37,10 @@ const Feature = () => {
             variants={scrollAnimation}
           >
               <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-              Unlock the Power of Marketi for Your Business.
+              Unlock the Power of Maketi for Your Business.
               </h3>
               <p className="my-2 text-black-500">
-              Marketi is more than just a platform – it's your gateway to success in the African commerce landscape. Here's why you should choose Marketi to supercharge your business:
+              Maketi is more than just a platform – it's your gateway to success in the African commerce landscape. Here's why you should choose Maketi to supercharge your business:
               </p>
             <ul className="text-black-500 self-start list-inside ml-8">
               {features.map((feature, index) => (

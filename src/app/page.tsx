@@ -6,6 +6,8 @@ import ServicesOffered from "@/components/Services-offered";
 import Contact from "@/components/Contact";
 import Mission from "@/components/Mission";
 export default function Home() {
+
+  
   return (
     <>
       <Hero />

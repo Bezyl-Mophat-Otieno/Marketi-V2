@@ -1,11 +1,10 @@
 "use client";
 import React, { useMemo } from "react";
 import Image from "next/image";
-import ButtonPrimary from "../misc/ButtonPrimary";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
-import hero1 from "../../public/assets/Illustration1.png"
+import Link from "next/link";
 
 const Hero = ({
   listUser = [
@@ -42,18 +41,15 @@ const Hero = ({
             scale faster.
           </h1>
            <p className="mb-8 text-lg leading-relaxed">
-            Welcome to Marketi, where innovation meets commerce in the heart of
-            Africa. <br />{" "}
+            Welcome to Maketi, where innovation meets commerce in the heart of
+            Africa.{""}
             <span className="font-bold"> Our mission is clear</span>: to be the
             driving force behind the success of Small and Medium-sized
             Businesses (SMBs) across the continent.
           </p>
              <div className="flex justify-center space-x-4">
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              Get Started
-            </button>
-            <button className="inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-              Learn More
+            <button className="inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg ">
+              <Link href={"#services"}>Learn More</Link>
             </button>
           </div>
           </div>

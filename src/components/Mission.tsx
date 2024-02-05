@@ -1,19 +1,24 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import { useMemo } from "react";
 import getScrollAnimation from "@/utils/getScrollAnimation";
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
-import Socials from "./Socials";
+import { Toast } from "primereact/toast";
 const  Mission = ()=>{
+const toast = useRef<Toast>(null);
 
 const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
+const show = ()=>{
+  toast.current?.show({ severity: 'info', summary: 'Success', detail: 'You have successfully subscrbed to our NewsLetter', life: 3000 });
+}
 
   
   return (
     <section className="text-gray-600 body-font">
+      {/* <Toast ref={toast} position="top-right" /> */}
       <ScrollAnimationWrapper props={{}} className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <motion.div variants={scrollAnimation} className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <Image
@@ -48,7 +53,7 @@ const scrollAnimation = useMemo(() => getScrollAnimation(), []);
                 className="w-full bg-gray-100 bg-opacity-50 rounded-md border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-2 px-4 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
-            <button className="ml-4 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <button onClick={show} className="ml-4 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -60,7 +65,7 @@ const scrollAnimation = useMemo(() => getScrollAnimation(), []);
               >
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
-              Subscribe to our Mailing List
+                Subscribe to Our Newsletter
             </button>
           </div>
         </motion.div>

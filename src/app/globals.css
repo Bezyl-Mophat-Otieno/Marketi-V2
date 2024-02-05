@@ -5,6 +5,10 @@
 @import "slick-carousel/slick/slick.css";
 /*! purgecss end ignore*/
 
+nextjs-portal {
+  display: none;
+}
+
 html {
   font-family: "Rubik", sans-serif;
 }
