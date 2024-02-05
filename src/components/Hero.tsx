@@ -35,8 +35,8 @@ const Hero = ({
           variants={scrollAnimation}
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-            We help African SMBs
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 font-bold">
+            We help African SMB's {" "}
             <br className="hidden lg:inline-block" />
             scale faster.
           </h1>
