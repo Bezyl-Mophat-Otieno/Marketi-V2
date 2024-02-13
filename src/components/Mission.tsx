@@ -19,14 +19,14 @@ const show = ()=>{
   return (
     <section className="text-gray-600 body-font">
       {/* <Toast ref={toast} position="top-right" /> */}
-      <ScrollAnimationWrapper props={{}} className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <ScrollAnimationWrapper props={{}} className="container mx-auto w-900px h-900px border-solid border-2 border-gray-3 flex px-5 py-24 md:flex-row flex-col items-center">
         <motion.div variants={scrollAnimation} className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <Image
             className="object-cover object-center rounded"
-            src={"/assets/hero-image1.jpg"}
+            src={"/assets/client-hero-image1.jpg"}
             alt="hero-section-image"
-            width={700}
-            height={700}
+            width={900}
+            height={900}
           />
         </motion.div>
         <motion.div variants={scrollAnimation} className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -53,7 +53,7 @@ const show = ()=>{
                 className="w-full bg-gray-100 bg-opacity-50 rounded-md border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-2 px-4 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
-            <button onClick={show} className="ml-4 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <button onClick={show} className="ml-4 inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">
               <svg
                 fill="none"
                 stroke="currentColor"

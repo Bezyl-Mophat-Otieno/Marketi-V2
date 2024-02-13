@@ -4,6 +4,7 @@ import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "@/misc/ButtonOutline";
+import Image from "next/image";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState<string | null>(null);
@@ -29,21 +30,15 @@ const Header = () => {
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <Link
               href={""}
-              className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+              className="flex title-font font-medium items-center justify-items-center text-gray-900 mb-4 md:mb-0"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-              <div className="ml-3 text-xl">MAKETI</div>
+              <Image
+                src={"/assets/clientlogo.png"}
+                alt="maketi-logo"
+                width={90}
+                height={90}
+                className="object-cover hover:bg-gray-50 h-20 w-50 mt-3 hover:rounded-full" 
+              />
             </Link>
             <LinkScroll
               activeClass="active"

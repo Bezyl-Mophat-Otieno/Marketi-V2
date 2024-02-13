@@ -7,7 +7,7 @@ import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const features = [
   "Compliance Tools",
-  "Payment Repatriation",
+  "Fulfillment services",
   "Business Development",
   "Settlement Tools",
 ];
@@ -17,7 +17,7 @@ const Feature = () => {
 
   return (
     <div
-      className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
+      className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto "
       id="feature"
     >
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">

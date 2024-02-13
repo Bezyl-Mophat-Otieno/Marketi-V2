@@ -27,7 +27,7 @@ const  Contact = ()=> {
             height="100%"
             className="absolute inset-0"
             title="map"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=place?q=Nairobi,+Kenya"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=place?q=garden+city+nairobi"
             style={{ filter: "grayscale(0) contrast(1.0) opacity(0.8)" }}
             ></iframe>
           <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
@@ -36,8 +36,7 @@ const  Contact = ()=> {
                 ADDRESS
               </h2>
               <p className="mt-1">
-                Photo booth tattooed prism, portland taiyaki hoodie neutra
-                typewriter
+                Garden City Mall, Thika Road, Nairobi, Kenya
               </p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
@@ -45,12 +44,12 @@ const  Contact = ()=> {
                 EMAIL
               </h2>
               <Link href={""} className="text-indigo-500 leading-relaxed">
-                example@email.com
+                contact@joinmaketi.com
               </Link>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                 PHONE
               </h2>
-              <p className="leading-relaxed">123-456-7890</p>
+              <p className="leading-relaxed"> (+254) 715 402 009</p>
             </div>
           </div>
         </motion.div>
@@ -95,7 +94,7 @@ const  Contact = ()=> {
               className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
           </div>
-          <button onClick={show} className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+          <button onClick={show} className="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange -600 rounded text-lg">
             Send
           </button>
           <p className="text-xs text-gray-500 mt-3">
