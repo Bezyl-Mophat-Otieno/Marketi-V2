@@ -40,7 +40,7 @@ const Feature = () => {
               Unlock the Power of Maketi for Your Business.
               </h3>
               <p className="my-2 text-black-500">
-              Maketi is more than just a platform – it's your gateway to success in the African commerce landscape. Here's why you should choose Maketi to supercharge your business:
+              Maketi is more than just a platform – it{"&apos"}s your gateway to success in the African commerce landscape. Here{"&apos"}s why you should choose Maketi to supercharge your business:
               </p>
             <ul className="text-black-500 self-start list-inside ml-8">
               {features.map((feature, index) => (
