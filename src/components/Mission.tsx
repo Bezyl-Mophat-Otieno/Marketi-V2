@@ -19,11 +19,11 @@ const show = ()=>{
   return (
     <section className="text-gray-600 body-font">
       {/* <Toast ref={toast} position="top-right" /> */}
-      <ScrollAnimationWrapper props={{}} className="container mx-auto w-900px h-900px border-solid border-2 border-gray-3 flex px-5 py-24 md:flex-row flex-col items-center">
+      <ScrollAnimationWrapper  className="container mx-auto w-900px h-900px border-solid border-2 border-gray-3 flex px-5 py-24 md:flex-row flex-col items-center">
         <motion.div variants={scrollAnimation} className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <Image
             className="object-cover object-center rounded"
-            src={"/assets/client-hero-image1.jpg"}
+            src={"/assets/service-section.jpg"}
             alt="hero-section-image"
             width={900}
             height={900}

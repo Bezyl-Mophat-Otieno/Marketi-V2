@@ -29,7 +29,7 @@ const Hero = ({
 
   return (
     <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id="about">
-      <ScrollAnimationWrapper className="" props={{}}>
+      <ScrollAnimationWrapper className="">
         <motion.div
           className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
           variants={scrollAnimation}
@@ -53,7 +53,7 @@ const Hero = ({
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
               <Image
-                src={"/assets/african2.E.png"}
+                src={"/assets/hero-section.png"}
                 alt="hero-section-image"
                 width={800}
                 height={800}
@@ -65,7 +65,7 @@ const Hero = ({
       </ScrollAnimationWrapper>
       <div className="relative w-full flex">
         <ScrollAnimationWrapper
-          props={{}}
+        
           className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10"
         >
           {listUser.map((listUsers, index) => (

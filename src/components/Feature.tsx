@@ -21,17 +21,17 @@ const Feature = () => {
       id="feature"
     >
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
-        <ScrollAnimationWrapper className="flex w-full justify-end" props={{}}>
+        <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/assets/service-img.jpg"
-              alt="VPN Illustrasi"
+              src="/assets/services.jpg"
+              alt="Services-image"
               height={700}
               width={700}
             />
           </motion.div>
         </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper className="" props={{}}>
+        <ScrollAnimationWrapper className="">
           <motion.div
             className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12"
             variants={scrollAnimation}

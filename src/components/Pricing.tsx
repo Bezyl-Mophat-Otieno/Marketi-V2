@@ -18,7 +18,7 @@ const Pricing = () => {
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
-          <ScrollAnimationWrapper className="" props={{}}>
+          <ScrollAnimationWrapper className="">
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
@@ -34,7 +34,7 @@ const Pricing = () => {
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            <ScrollAnimationWrapper className="flex justify-center" props={{}}>
+            <ScrollAnimationWrapper className="flex justify-center" >
               <motion.div
                 variants={scrollAnimation}
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
@@ -78,7 +78,7 @@ const Pricing = () => {
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center" props={{}}>
+            <ScrollAnimationWrapper className="flex justify-center" >
               <motion.div
                 variants={scrollAnimation}
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
@@ -125,7 +125,7 @@ const Pricing = () => {
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center" props={{}}>
+            <ScrollAnimationWrapper className="flex justify-center" >
               <motion.div
                 variants={scrollAnimation}
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
@@ -179,7 +179,7 @@ const Pricing = () => {
           </div>
         </div>
         <div className="flex flex-col w-full my-16">
-          <ScrollAnimationWrapper className="" props={{}}>
+          <ScrollAnimationWrapper className="" >
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto"
@@ -194,13 +194,13 @@ const Pricing = () => {
               locations.
             </motion.p>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="" props={{}}>
+          <ScrollAnimationWrapper className="" >
             <motion.div
               className="py-12 w-full px-8 mt-16"
               variants={scrollAnimation}
             ></motion.div>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="" props={{}}>
+          <ScrollAnimationWrapper className="" >
             <motion.div
               className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap"
               variants={scrollAnimation}
@@ -235,7 +235,7 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
         </div>
         <div className="flex flex-col w-full my-16" id="testimoni">
-          <ScrollAnimationWrapper className="" props={{}}>
+          <ScrollAnimationWrapper className="" >
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
@@ -252,13 +252,13 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper
             className="w-full flex flex-col py-12"
-            props={{}}
+           
           >
             <motion.div variants={scrollAnimation}>
               <Testimoni />
             </motion.div>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="relative w-full mt-16" props={{}}>
+          <ScrollAnimationWrapper className="relative w-full mt-16" >
             <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
               <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">

@@ -1,6 +1,6 @@
 "use client";
 import React, { useMemo , useRef } from "react";
-
+import { GoogleMap } from "@react-google-maps/api";
 import Link from "next/link";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 import { motion } from "framer-motion";
@@ -19,7 +19,7 @@ const  Contact = ()=> {
   return (
     <>
     {/* <Toast ref={toast} /> */}
-    <ScrollAnimationWrapper props={{}} className="text-gray-600 body-font relative  w-screen" >
+    <ScrollAnimationWrapper  className="text-gray-600 body-font relative  w-screen" >
       <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap" id="contact">
         <motion.div variants={scrollAnimation}  className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
