@@ -36,12 +36,12 @@ const Hero = ({
         >
       <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
       <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 font-bold">
-        Empowering African SMB{"&apos"}s{" "}
+        Empowering African SMB's{" "}
         <br className="hidden lg:inline-block" />
         scale faster.
       </h1>
       <p className="mb-8 text-lg leading-relaxed">
-        We{"&apos"}re on a mission to build the operating system for SMB{"&apos"}s, enabling them to start and scale within the AFCTA region. 
+        We're on a mission to build the operating system for SMB's, enabling them to start and scale within the AFCTA region. 
         Experience everything you need to start selling in Africa and unlock abundance for your business.
       </p>
       <div className="flex justify-center space-x-4">

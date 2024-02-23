@@ -63,7 +63,7 @@ function ServicesOffered() {
               Business Development
             </h2>
             <p className="leading-relaxed text-base">
-              Accelerate your business growth with Maketi{"&apos"}s Business
+              Accelerate your business growth with Maketi's Business
               Development service. Leverage our extensive network and resources to grow your business.
             </p>
             <Link
