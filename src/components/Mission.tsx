@@ -23,7 +23,7 @@ const show = ()=>{
         <motion.div variants={scrollAnimation} className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <Image
             className="object-cover object-center rounded"
-            src={"/assets/service-section.jpg"}
+            src={"http://res.cloudinary.com/dfukupatj/image/upload/v1709279784/fhrzhj9wguaxjvvqay4n.jpg"}
             alt="hero-section-image"
             width={900}
             height={900}

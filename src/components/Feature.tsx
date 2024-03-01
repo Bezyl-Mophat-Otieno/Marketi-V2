@@ -24,7 +24,7 @@ const Feature = () => {
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/assets/services.jpg"
+              src="http://res.cloudinary.com/dfukupatj/image/upload/v1709279987/jmenjvovhn3swtcz6c9h.jpg"
               alt="Services-image"
               height={700}
               width={700}

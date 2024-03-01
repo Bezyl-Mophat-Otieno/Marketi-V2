@@ -33,7 +33,7 @@ const Header = () => {
               className="flex title-font font-medium items-center justify-items-center text-gray-900 mb-4 md:mb-0"
             >
               <Image
-                src={"/assets/clientlogo.png"}
+                src={"http://res.cloudinary.com/dfukupatj/image/upload/v1709280087/w9n4aqanjeyejjq3plng.png"}
                 alt="maketi-logo"
                 width={90}
                 height={90}

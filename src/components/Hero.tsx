@@ -53,7 +53,7 @@ const Hero = ({
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
               <Image
-                src={"/assets/hero-section.png"}
+                src={"http://res.cloudinary.com/dfukupatj/image/upload/v1709279690/miqc27hk5kfjywy8ts8d.png"}
                 alt="hero-section-image"
                 width={800}
                 height={800}
